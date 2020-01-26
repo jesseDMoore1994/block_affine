@@ -1,4 +1,3 @@
-import sys
 import re
 
 
@@ -63,7 +62,10 @@ class AffineEncryptor:
 
     def _import_msg(self):
         with open(self.infile, "r") as f:
-            return self._pad_msg(re.sub("[^A-Z]", "", f.read()))
+            data = f.read()
+            if re.search("[^A-Z]", data):
+                print("Warning! Illegal characters detected, cleaning and proceeding.")
+            return self._pad_msg(re.sub("[^A-Z]", "", data))
 
     def write_encrypted(self):
         with open(self.outfile, "w") as f:
