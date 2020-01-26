@@ -72,7 +72,7 @@ class AffineEncryptor:
         self.infile = infile
         self.outfile = outfile
 
-        # calculate max block size.
+        # calculate max block value.
         self.max_input_val = self._get_max_value_for_block()
 
         # assert user multiplier can be used.
