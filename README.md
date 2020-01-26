@@ -1,6 +1,6 @@
-#Block Affine Cipher Encryption and Decryption scripts 
+# Block Affine Cipher Encryption and Decryption scripts 
 
-##How to run
+## How to run
 This project has been tested to work with python 3.7. The same version as default in the UAH CS
 Linux computer labs. No libraries external to python have been used.
 
@@ -23,7 +23,7 @@ Illegal characters will be stripped from the input and fed to the encryptor.
 "THIS IS A,
 SECRET" yields "THISISASECRET" before encryption.
 
-###ENCRYPTING
+### ENCRYPTING
 Put your secret message into a file labeled `plaintext.txt`, and execute the following command.
 
 ```
@@ -35,7 +35,7 @@ a system prompt.
 
 This will generate an encrypted text file called `ciphertext.txt`
 
-###DECRYPTING
+### DECRYPTING
 In order to decrypt `ciphertext.txt`, execute the following command.
 
 ```
