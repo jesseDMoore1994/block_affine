@@ -1,4 +1,4 @@
 venv
-src/ciphertext.txt
-src/finalplaintextoutput.txt
-src/plaintext.txt
+ciphertext.txt
+finalplaintextoutput.txt
+plaintext.txt
